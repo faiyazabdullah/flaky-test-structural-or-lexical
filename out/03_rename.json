@@ -1,0 +1,158 @@
+{
+  "n_rows": 8422,
+  "n_cues_static": 130,
+  "n_cues_present": 106,
+  "rename_map_size": 127,
+  "rows_with_at_least_one_replacement": 2394,
+  "rows_with_replacement_rate": 0.28425552125385894,
+  "mean_replacements_per_row": 0.9660413203514605,
+  "java_token_count_equal_rate": 1.0,
+  "java_token_kinds_equal_rate": 1.0,
+  "codebert_subword_delta": {
+    "mean": 0.5896461648064593,
+    "median": 0.0,
+    "equal_rate": 0.78473046782237,
+    "p05": 0.0,
+    "p95": 4.0,
+    "note": "Renaming is exactly token-count preserving at the Java lexical level (that is the acceptance criterion). Subword counts still shift because a neutral name segments differently; reported here rather than hidden."
+  },
+  "cue_tag_sizes": {
+    "attributed": 4,
+    "attributed_curated": 45,
+    "api": 81,
+    "mined_audit_only": 200
+  },
+  "top_replacements": [
+    [
+      777,
+      "System",
+      "SymBp"
+    ],
+    [
+      565,
+      "iterator",
+      "symCr"
+    ],
+    [
+      501,
+      "HashMap",
+      "MapA"
+    ],
+    [
+      418,
+      "TimeUnit",
+      "Scale"
+    ],
+    [
+      378,
+      "Thread",
+      "SymBq"
+    ],
+    [
+      373,
+      "now",
+      "symC1"
+    ],
+    [
+      316,
+      "Duration",
+      "SymY"
+    ],
+    [
+      285,
+      "Instant",
+      "Sym8"
+    ],
+    [
+      284,
+      "CountDownLatch",
+      "Gate"
+    ],
+    [
+      264,
+      "InterruptedException",
+      "HaltedFailure"
+    ],
+    [
+      253,
+      "await",
+      "stall"
+    ],
+    [
+      238,
+      "sleep",
+      "symDd"
+    ],
+    [
+      237,
+      "values",
+      "secondView"
+    ],
+    [
+      231,
+      "execute",
+      "invokeOn"
+    ],
+    [
+      207,
+      "Calendar",
+      "Almanac"
+    ],
+    [
+      201,
+      "currentTimeMillis",
+      "readCounter"
+    ],
+    [
+      188,
+      "timeout",
+      "symDl"
+    ],
+    [
+      155,
+      "Date",
+      "Stamp"
+    ],
+    [
+      151,
+      "join",
+      "settle"
+    ],
+    [
+      149,
+      "Iterator",
+      "SymBb"
+    ],
+    [
+      130,
+      "AtomicInteger",
+      "CellInt"
+    ],
+    [
+      117,
+      "timestamp",
+      "symDm"
+    ],
+    [
+      97,
+      "AtomicReference",
+      "CellRef"
+    ],
+    [
+      92,
+      "clear",
+      "symCg"
+    ],
+    [
+      88,
+      "AtomicBoolean",
+      "CellBool"
+    ]
+  ],
+  "acceptance": {
+    "rename_unit_tests": "see tests/test_rename.py -- run via scripts/run_all.py --tests",
+    "java_token_count_equal_ge_95pct": true,
+    "rename_map_injective": true,
+    "no_collision_with_corpus_identifiers": true
+  }
+}

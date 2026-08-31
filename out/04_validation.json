@@ -1,0 +1,118 @@
+{
+  "n_audited": 50,
+  "auditor": "Claude (implementing agent)",
+  "precision_floor": 0.8,
+  "provenance": {
+    "auditor": "Claude (implementing agent)",
+    "method": "Each method read in full against the definitions in plan/04_STRUCTURAL_LABELS.md. Two judgements per property: the definitional one (does the property hold as written, with the plan's fixed vocabularies) and the semantic one (does it hold in the code's actual behaviour).",
+    "unord_rule": "P_UNORD was judged to hold only when a value *produced by iterating* an unordered collection -- a for-each/iterator element, a keySet/entrySet/values traversal, or a rendering of the whole collection whose result depends on its order -- reaches an assertion argument. A collection merely passed to an opaque call does not qualify.",
+    "development_pass": "An earlier pass over a different 50-method sample surfaced four analyser bugs (timed Thread.join not treated as a barrier; verify(mock).start() counted as a dispatch; map.get(k) results carrying collection taint; try-with-resources initialisers never analysed). Those were fixed before this audit was scored. The P_UNORD tightening below was driven by false positives in THIS sample, so the P_UNORD precision reported here is optimistic and is flagged as such.",
+    "keyed_by": "uid (sha1 of the normalised code). FlakeBench's `id` collides between its flaky and non-flaky halves, so ids 335 and 361 were disambiguated by the project of the method actually read."
+  },
+  "properties": {
+    "P_ASYNC": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "tn": 36,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_wilson_95": [
+        0.7846891972623643,
+        1.0
+      ],
+      "recall_wilson_95": [
+        0.7846891972623643,
+        1.0
+      ],
+      "n_predicted_positive": 14,
+      "n_true_positive": 14,
+      "meets_precision_floor": true,
+      "false_positive_ids": [],
+      "false_negative_ids": []
+    },
+    "P_UNORD": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 4,
+      "tn": 43,
+      "precision": 1.0,
+      "recall": 0.42857142857142855,
+      "f1": 0.6,
+      "precision_wilson_95": [
+        0.4385029682449546,
+        1.0
+      ],
+      "recall_wilson_95": [
+        0.15821985525146975,
+        0.7495416354723428
+      ],
+      "n_predicted_positive": 3,
+      "n_true_positive": 7,
+      "meets_precision_floor": true,
+      "false_positive_ids": [],
+      "false_negative_ids": [
+        "e6d9836f59ab",
+        "6b9cdad5db89",
+        "e8f9d5784af1",
+        "d4538f58bd77"
+      ]
+    },
+    "P_CLOCK": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "tn": 38,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "precision_wilson_95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "recall_wilson_95": [
+        0.7575059933447592,
+        1.0
+      ],
+      "n_predicted_positive": 12,
+      "n_true_positive": 12,
+      "meets_precision_floor": true,
+      "false_positive_ids": [],
+      "false_negative_ids": []
+    }
+  },
+  "semantic": {
+    "P_ASYNC": {
+      "tp": 5,
+      "fp": 9,
+      "fn": 0,
+      "precision": 0.35714285714285715,
+      "recall": 1.0
+    },
+    "P_UNORD": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333
+    },
+    "P_CLOCK": {
+      "tp": 9,
+      "fp": 3,
+      "fn": 0,
+      "precision": 0.75,
+      "recall": 1.0
+    }
+  },
+  "retained_properties": [
+    "P_ASYNC",
+    "P_UNORD",
+    "P_CLOCK"
+  ],
+  "dropped_properties": [],
+  "acceptance": {
+    "precision_floor_met_for_all_properties": true,
+    "audit_size_at_least_50": true
+  }
+}

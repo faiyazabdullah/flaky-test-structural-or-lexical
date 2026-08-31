@@ -1,0 +1,409 @@
+{
+ "e6d9836f59ab": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "6b9cdad5db89": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "e8f9d5784af1": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "e890a619d73b": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "5dd6208c06f0": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "289145a73bb8": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "7948d927f4f1": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "1de35a414e7b": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "f6350c9552b8": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "d4538f58bd77": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "9de1ee58c683": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "d49cd59a7cd6": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "e9bf03a78844": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "17e11b7d0f4e": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "9d4b79ebf094": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "1a27a44adc89": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 1,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "b16e618540e1": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "4c061ec7229b": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "b903d0f2a511": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "98f9550c7dc6": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 1,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "e724f2dc0823": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "2bc718514eeb": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "3c0f0746a997": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "0c6ea014c98f": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "3318ce81cd5c": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "4062486b40d3": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "fb77994ad145": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "3a96c4864c52": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "d6ca7cfd0716": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "2272fbb69e02": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "725b53f1226e": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 1,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "76259cce19f3": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 1,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "17a293687912": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 1,
+  "P_CLOCK_semantic": 0
+ },
+ "16ed6bef71e6": {
+  "P_ASYNC": 0,
+  "P_UNORD": 1,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "72423a8f9374": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "508d4654cb06": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "5f0e09000e04": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "bba73b60c619": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "9dc8aee64c4d": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "d4e185dc09fe": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "e3d752688990": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "6306778297ad": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "3f4bbd0b021d": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "da016d518db0": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "ecd519dc7cf4": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 1,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "d3b669105038": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "11cfbf39978f": {
+  "P_ASYNC": 1,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "8e124ffbd6f0": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "90bca2190482": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 1,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 1
+ },
+ "0e3ba6986056": {
+  "P_ASYNC": 0,
+  "P_UNORD": 0,
+  "P_CLOCK": 0,
+  "P_ASYNC_semantic": 0,
+  "P_UNORD_semantic": 0,
+  "P_CLOCK_semantic": 0
+ },
+ "_provenance": {
+  "auditor": "Claude (implementing agent)",
+  "method": "Each method read in full against the definitions in plan/04_STRUCTURAL_LABELS.md. Two judgements per property: the definitional one (does the property hold as written, with the plan's fixed vocabularies) and the semantic one (does it hold in the code's actual behaviour).",
+  "unord_rule": "P_UNORD was judged to hold only when a value *produced by iterating* an unordered collection -- a for-each/iterator element, a keySet/entrySet/values traversal, or a rendering of the whole collection whose result depends on its order -- reaches an assertion argument. A collection merely passed to an opaque call does not qualify.",
+  "development_pass": "An earlier pass over a different 50-method sample surfaced four analyser bugs (timed Thread.join not treated as a barrier; verify(mock).start() counted as a dispatch; map.get(k) results carrying collection taint; try-with-resources initialisers never analysed). Those were fixed before this audit was scored. The P_UNORD tightening below was driven by false positives in THIS sample, so the P_UNORD precision reported here is optimistic and is flagged as such.",
+  "keyed_by": "uid (sha1 of the normalised code). FlakeBench's `id` collides between its flaky and non-flaky halves, so ids 335 and 361 were disambiguated by the project of the method actually read."
+ }
+}

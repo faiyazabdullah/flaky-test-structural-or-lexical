@@ -1,0 +1,276 @@
+{
+  "alpha": 0.05,
+  "probe": {
+    "model": "qwen1_5b",
+    "pool": "last",
+    "layer": 6,
+    "n_layers_searched": 29,
+    "selection": "argmax of flaky_code cross-project AP; a maximum over a searched curve, not a held-out estimate"
+  },
+  "strong_word_baseline": {
+    "method": "char_ngram",
+    "ap_mean": 0.20319378342661074,
+    "ap_folds": [
+      0.38968723289532753,
+      0.15826361358512184,
+      0.15638645665873177,
+      0.1486726306523055,
+      0.1629589833415671
+    ],
+    "ap_std": 0.1043801321296388,
+    "candidates": {
+      "bow": 0.14881922755133908,
+      "char_ngram": 0.20319378342661074,
+      "bow_plus_length": 0.17456981762155926
+    },
+    "regime": "cross",
+    "subset": "full",
+    "note": "Stopping rule S1 is evaluated against this value. Fixed in 02."
+  },
+  "criteria": {
+    "S1": {
+      "description": "probe trained on `code`, evaluated on `code_renamed`",
+      "baseline_method": "char_ngram",
+      "baseline_folds": [
+        0.38968723289532753,
+        0.15826361358512184,
+        0.15638645665873177,
+        0.1486726306523055,
+        0.1629589833415671
+      ],
+      "framings": {
+        "primary_cue_removed": {
+          "n": 5,
+          "a": [
+            0.7833036849877344,
+            0.6056843018194696,
+            0.5300940030357826,
+            0.8092849429921661,
+            0.7873650997899118
+          ],
+          "b": [
+            0.38968723289532753,
+            0.15826361358512184,
+            0.15638645665873177,
+            0.1486726306523055,
+            0.1629589833415671
+          ],
+          "diff": [
+            0.39361645209240687,
+            0.4474206882343478,
+            0.37370754637705084,
+            0.6606123123398606,
+            0.6244061164483447
+          ],
+          "mean_diff": 0.49995262309840216,
+          "median_diff": 0.4474206882343478,
+          "n_positive": 5,
+          "alternative": "greater",
+          "min_attainable_p": 0.03125,
+          "statistic": 15.0,
+          "p": 0.03125,
+          "cliffs_delta": 1.0,
+          "cohens_dz": 3.7445429518209687,
+          "probe_ap_mean": 0.7031464065250129,
+          "baseline_ap_mean": 0.20319378342661074,
+          "passes": true,
+          "framing": "probe trained on `code`, evaluated on `code_renamed`"
+        },
+        "secondary_on_code": {
+          "n": 5,
+          "a": [
+            0.7884829052609299,
+            0.607944818725643,
+            0.5376454757532426,
+            0.8140921880826824,
+            0.7942262828022078
+          ],
+          "b": [
+            0.38968723289532753,
+            0.15826361358512184,
+            0.15638645665873177,
+            0.1486726306523055,
+            0.1629589833415671
+          ],
+          "diff": [
+            0.39879567236560237,
+            0.4496812051405211,
+            0.3812590190945109,
+            0.6654195574303768,
+            0.6312672994606406
+          ],
+          "mean_diff": 0.5052845506983303,
+          "median_diff": 0.4496812051405211,
+          "n_positive": 5,
+          "alternative": "greater",
+          "min_attainable_p": 0.03125,
+          "statistic": 15.0,
+          "p": 0.03125,
+          "cliffs_delta": 1.0,
+          "cohens_dz": 3.7838463985538913,
+          "probe_ap_mean": 0.7084783341249411,
+          "baseline_ap_mean": 0.20319378342661074,
+          "passes": true,
+          "framing": "probe trained and evaluated on `code`"
+        },
+        "secondary_retrained_renamed": {
+          "n": 5,
+          "a": [
+            0.7685097040665927,
+            0.6165208994044753,
+            0.5542330239720163,
+            0.8165498239183305,
+            0.7953992383168109
+          ],
+          "b": [
+            0.38968723289532753,
+            0.15826361358512184,
+            0.15638645665873177,
+            0.1486726306523055,
+            0.1629589833415671
+          ],
+          "diff": [
+            0.37882247117126516,
+            0.45825728581935343,
+            0.3978465673132846,
+            0.667877193266025,
+            0.6324402549752438
+          ],
+          "mean_diff": 0.5070487545090343,
+          "median_diff": 0.45825728581935343,
+          "n_positive": 5,
+          "alternative": "greater",
+          "min_attainable_p": 0.03125,
+          "statistic": 15.0,
+          "p": 0.03125,
+          "cliffs_delta": 1.0,
+          "cohens_dz": 3.7705170611295133,
+          "probe_ap_mean": 0.7102425379356452,
+          "baseline_ap_mean": 0.20319378342661074,
+          "passes": true,
+          "framing": "probe trained and evaluated on `code_renamed`"
+        }
+      },
+      "passes": true,
+      "note": "Five folds: the smallest attainable one-sided p is 1/32 = 0.031, so a pass requires every fold to favour the probe. Fold-level differences are listed in full above the verdict."
+    },
+    "S2": {
+      "description": "renaming transfer drop is smaller for the probe than for the word baseline",
+      "delta_probe_folds": [
+        0.005179220273195506,
+        0.0022605169061733488,
+        0.007551472717460039,
+        0.004807245090516221,
+        0.0068611830122959905
+      ],
+      "delta_bow_folds": [
+        0.09522982062815993,
+        0.05432441364906895,
+        0.08087554087101555,
+        0.012267291840469222,
+        0.06563025414827911
+      ],
+      "delta_probe_mean": 0.005331927599928221,
+      "delta_bow_mean": 0.06166546422739855,
+      "paired_test_bow_minus_probe": {
+        "n": 5,
+        "a": [
+          0.09522982062815993,
+          0.05432441364906895,
+          0.08087554087101555,
+          0.012267291840469222,
+          0.06563025414827911
+        ],
+        "b": [
+          0.005179220273195506,
+          0.0022605169061733488,
+          0.007551472717460039,
+          0.004807245090516221,
+          0.0068611830122959905
+        ],
+        "diff": [
+          0.09005060035496443,
+          0.052063896742895605,
+          0.07332406815355551,
+          0.007460046749953,
+          0.05876907113598312
+        ],
+        "mean_diff": 0.05633353662747033,
+        "median_diff": 0.05876907113598312,
+        "n_positive": 5,
+        "alternative": "greater",
+        "min_attainable_p": 0.03125,
+        "statistic": 15.0,
+        "p": 0.03125,
+        "cliffs_delta": 1.0,
+        "cohens_dz": 1.8185600900510264
+      },
+      "passes": true,
+      "passes_paired_majority": true,
+      "n_folds_probe_smaller": 5
+    },
+    "S3": {
+      "description": "minimal-pair accuracy above 0.5 for the probe",
+      "scorer": "probe_qwen1_5b_last",
+      "n_pairs": 50,
+      "pair_acc": 0.42,
+      "wilson_95": [
+        0.2937500335471198,
+        0.5576655823142176
+      ],
+      "binom_p_two_sided": 0.3222363203575469,
+      "mean_margin": -0.08565120220184326,
+      "bow_pair_acc": 0.48,
+      "bow_mean_margin": 0.03633051351385236,
+      "cue_neutral": {
+        "n": 33,
+        "n_pre_higher": 11,
+        "n_ties": 0,
+        "pair_acc": 0.3333333333333333,
+        "wilson_95": [
+          0.19750227679220683,
+          0.5039210557219438
+        ],
+        "binom_p_two_sided": 0.08014331245794892,
+        "mean_margin": -0.08689134048693108,
+        "median_margin": -0.0795431137084961,
+        "margin_std": 0.8981895835168208
+      },
+      "bow_cue_neutral": {
+        "n": 33,
+        "n_pre_higher": 16,
+        "n_ties": 9,
+        "pair_acc": 0.48484848484848486,
+        "wilson_95": [
+          0.32504042108133696,
+          0.6478162455108585
+        ],
+        "binom_p_two_sided": 1.0,
+        "mean_margin": 0.02449523659678993,
+        "median_margin": 0.0,
+        "margin_std": 0.10497362750321686
+      },
+      "status": "evaluated",
+      "passes": false,
+      "power_note": "50 usable pairs; below 40 the binomial test has too little power and S3 is inconclusive, not failed.",
+      "sign_note": "The contrast with bow is the substantive result: a cue-riding model is expected below 0.5 because fixes add cue tokens."
+    }
+  },
+  "overall": "stop_and_write_up",
+  "overall_note": "All three must hold to proceed to Phase 2. Otherwise stop and write up. The negative write-up is a deliverable, not a fallback.",
+  "split_verdict": {
+    "probe_encodes_properties_ap": {
+      "P_ASYNC": 0.20698655403711044,
+      "P_UNORD": 0.15650257709096782,
+      "P_CLOCK": 0.21039098585495034
+    },
+    "probe_property_selectivity": {
+      "P_ASYNC": 0.17065190695254773,
+      "P_UNORD": 0.1201679300064051,
+      "P_CLOCK": 0.16562109565340255
+    },
+    "structural_only_classifier_ap": 0.04599776569751688,
+    "class_prior": 0.03253383994300641,
+    "note": "The probe may fail S1 while still encoding P_ASYNC well. That would mean the model represents the structure but the structure does not predict this dataset's labels -- a different and more interesting finding than a flat negative, and it is reported as such."
+  }
+}

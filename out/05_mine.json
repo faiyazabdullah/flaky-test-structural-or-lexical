@@ -1,0 +1,62 @@
+{
+  "n_commits_considered": 172,
+  "n_commits_fetched": 172,
+  "n_commit_errors": 2,
+  "commit_errors": [
+    {
+      "commit": "apache/pulsar@commit def26fe235a4a9e274475a24125e5ca7db23d5b7",
+      "error": "GitError: git fetch -q --depth=2...: fatal: invalid refspec 'commit def26fe235a4a9e274475a24125e5ca7db23d5b7'\n"
+    },
+    {
+      "commit": "ReactiveX/RxJava@src/test/java/rx/internal/operators/OperatorRetryTest.java",
+      "error": "GitError: git fetch -q --depth=2...: fatal: couldn't find remote ref src/test/java/rx/internal/operators/OperatorRetryTest.java\n"
+    }
+  ],
+  "n_pairs_raw": 237,
+  "n_pairs_unique": 232,
+  "n_pairs_flakebench_matched": 50,
+  "n_pairs_other_test_methods": 182,
+  "n_excluded": 47,
+  "excluded_reasons": {
+    "diff_exceeds_40pct_of_tokens": 13,
+    "no_test_file_changed": 22,
+    "file_missing_on_one_side": 11,
+    "method_missing_on_one_side": 1
+  },
+  "n_projects": 65,
+  "cue_strata": {
+    "cue_added": 41,
+    "cue_neutral": 162,
+    "cue_removed": 29
+  },
+  "annotation_only_count": 17,
+  "category_counts": {
+    "unknown": 182,
+    "async wait": 25,
+    "unordered collections": 12,
+    "time": 6,
+    "concurrency": 4,
+    "test order dependency": 3
+  },
+  "diff_frac": {
+    "mean": 0.0881819907844914,
+    "median": 0.05076741440377804
+  },
+  "max_diff_frac_filter": 0.4,
+  "power_note": "Below ~40 usable pairs the binomial test has too little power and S3 is marked inconclusive rather than passed or failed.",
+  "acceptance": {
+    "cue_deltas_recorded": true,
+    "excluded_logged_with_reasons": true,
+    "reaches_power_floor_40": true,
+    "reaches_target_of_60": true
+  },
+  "yield_vs_target": {
+    "n_usable_pairs": 232,
+    "plan_target_band": [
+      60,
+      120
+    ],
+    "within_band": false,
+    "note": "The plan targets 60-120 usable pairs. Landing above the band is a surplus, not a failure -- the binomial test only gains power. The acceptance gate is the power floor of 40."
+  }
+}

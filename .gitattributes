@@ -1,0 +1,18 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# ---------------------------------------------------------------------------
+# Byte-exact, no line-ending normalisation.
+#
+# This study measures whitespace: 1.78% of rows in the FlakeBench CSV contain
+# CRLF, 11% contain tabs, and stage 01 asserts on those rates (see
+# out/01_prep.json). Letting git rewrite CRLF -> LF on checkout would change
+# the input data and quietly break reproduction of the central finding, which
+# is that the two classes are separable by formatting alone.
+# ---------------------------------------------------------------------------
+dataset/** -text
+data/*.csv -text
+data/*.json -text
+
+*.npy binary
+*.png binary

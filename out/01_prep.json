@@ -1,0 +1,159 @@
+{
+  "input": "/home/faiyaz/Documents/flaky_test/dataset/FlakeBench_dataset.csv",
+  "smoke": false,
+  "seed": 0,
+  "n_rows_raw": 8574,
+  "class_counts_raw": {
+    "non-flaky": 8294,
+    "test order dependency": 93,
+    "async wait": 76,
+    "unordered collections": 41,
+    "concurrency": 37,
+    "time": 33
+  },
+  "n_conflicting_label_codes": 0,
+  "n_dup_exact_removed": 139,
+  "whitespace_auroc_before": 1.0,
+  "whitespace_rates_before": {
+    "ws_leading_indent": 0.9562537048014227,
+    "ws_ends_with_newline": 0.966804979253112,
+    "ws_contains_tab": 0.10646117368109069,
+    "ws_contains_crlf": 0.017190278601066984
+  },
+  "whitespace_rates_before_by_class": {
+    "non_flaky": {
+      "ws_leading_indent": 0.9890864500306561,
+      "ws_ends_with_newline": 1.0,
+      "ws_contains_tab": 0.11011649294911098,
+      "ws_contains_crlf": 0.017780502759043533
+    },
+    "flaky": {
+      "ws_leading_indent": 0.0,
+      "ws_ends_with_newline": 0.0,
+      "ws_contains_tab": 0.0,
+      "ws_contains_crlf": 0.0
+    }
+  },
+  "n_conflicting_label_codes_post_norm": 6,
+  "post_norm_conflicts": {
+    "policy": "drop",
+    "n_codes": 6,
+    "n_rows": 12,
+    "rows": [
+      {
+        "id": 62,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testJavaContext",
+        "label": "test order dependency"
+      },
+      {
+        "id": 74,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testBind.2",
+        "label": "test order dependency"
+      },
+      {
+        "id": 79,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testRejectionEAP6",
+        "label": "test order dependency"
+      },
+      {
+        "id": 166,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testRejectionEAP7",
+        "label": "test order dependency"
+      },
+      {
+        "id": 169,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testBindNested",
+        "label": "test order dependency"
+      },
+      {
+        "id": 268,
+        "project": "wildfly_wildfly",
+        "test_name": "b19048b72669fc0e96665b1b125dc1fda21f5993.testRebind.2",
+        "label": "test order dependency"
+      },
+      {
+        "id": 26836,
+        "project": "wildfly_wildfly",
+        "test_name": "WritableServiceBasedNamingStoreTestCase.testBind",
+        "label": "non-flaky"
+      },
+      {
+        "id": 26837,
+        "project": "wildfly_wildfly",
+        "test_name": "WritableServiceBasedNamingStoreTestCase.testBindNested",
+        "label": "non-flaky"
+      },
+      {
+        "id": 26842,
+        "project": "wildfly_wildfly",
+        "test_name": "WritableServiceBasedNamingStoreTestCase.testRebind",
+        "label": "non-flaky"
+      },
+      {
+        "id": 26851,
+        "project": "wildfly_wildfly",
+        "test_name": "NamingSubsystemTestCase.testRejectionsEAP7",
+        "label": "non-flaky"
+      },
+      {
+        "id": 26852,
+        "project": "wildfly_wildfly",
+        "test_name": "NamingSubsystemTestCase.testRejectionsEAP6",
+        "label": "non-flaky"
+      },
+      {
+        "id": 26906,
+        "project": "wildfly_wildfly",
+        "test_name": "InitialContextFactoryTestCase.testJavaContext",
+        "label": "non-flaky"
+      }
+    ],
+    "note": "Identical code carrying contradictory labels. Not resolvable from the data; both copies are dropped so neither label is silently preferred."
+  },
+  "n_post_norm_conflict_rows_dropped": 12,
+  "n_dup_post_norm_removed": 1,
+  "n_rows_after_dedup": 8422,
+  "post_norm_leading_indent_rate": 0.0,
+  "post_norm_ends_with_newline_rate": 0.0,
+  "whitespace_auroc_after": 0.5,
+  "n_colliding_source_ids": 66,
+  "matched": {
+    "n": 548,
+    "n_flaky": 274,
+    "n_non_flaky": 274,
+    "n_flaky_unmatched": 0,
+    "median_n_tokens_flaky": 285.0,
+    "median_n_tokens_non_flaky": 284.5,
+    "n_projects": 97,
+    "median_rel_diff": 0.0017543859649122807
+  },
+  "length_auroc_full": 0.688195840455228,
+  "length_auroc_matched": 0.4997136235281582,
+  "median_chars_flaky": 811.0,
+  "median_chars_non_flaky": 446.0,
+  "n_rows_final": 8422,
+  "n_projects": 98,
+  "class_counts_final": {
+    "non-flaky": 8148,
+    "test order dependency": 87,
+    "async wait": 76,
+    "unordered collections": 41,
+    "concurrency": 37,
+    "time": 33
+  },
+  "n_flaky": 274,
+  "class_prior": 0.03253383994300641,
+  "acceptance": {
+    "no_duplicate_code": true,
+    "uid_unique": true,
+    "leading_indent_rate_zero": true,
+    "whitespace_auroc_within_tolerance": true,
+    "matched_balanced": true,
+    "matched_median_within_2pct": true
+  }
+}

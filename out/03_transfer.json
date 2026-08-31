@@ -1,0 +1,267 @@
+{
+  "regime": "cross",
+  "subset": "full",
+  "n_folds": 5,
+  "methods": {
+    "length": {
+      "ap_code": {
+        "mean": 0.08916320329293607,
+        "std": 0.037838716568929086,
+        "folds": [
+          0.09877156725748407,
+          0.07817400524974262,
+          0.0525264549335894,
+          0.14969952235230802,
+          0.06664446667155624
+        ]
+      },
+      "ap_code_renamed": {
+        "mean": 0.08916320329293607,
+        "std": 0.037838716568929086,
+        "folds": [
+          0.09877156725748407,
+          0.07817400524974262,
+          0.0525264549335894,
+          0.14969952235230802,
+          0.06664446667155624
+        ]
+      },
+      "delta": {
+        "mean": 0.0,
+        "std": 0.0,
+        "folds": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "retrained_on_renamed": {
+        "ap": {
+          "mean": 0.08916320329293607,
+          "std": 0.037838716568929086,
+          "folds": [
+            0.09877156725748407,
+            0.07817400524974262,
+            0.0525264549335894,
+            0.14969952235230802,
+            0.06664446667155624
+          ]
+        },
+        "abs_diff_from_code_mean": 0.0,
+        "within_one_fold_std": true,
+        "fold_std_of_code_ap": 0.037838716568929086,
+        "note": "Sanity check only. Retraining on the renamed variant measures nothing about lexical reliance -- a bag-of-tokens model simply relearns the neutral names. It must land within noise of AP on `code`; if it does not, the renaming is leaking."
+      }
+    },
+    "bow": {
+      "ap_code": {
+        "mean": 0.14881922755133908,
+        "std": 0.038169475519843364,
+        "folds": [
+          0.2040548117190064,
+          0.10928342673538438,
+          0.16439339190046065,
+          0.1176580525336046,
+          0.14870645486823933
+        ]
+      },
+      "ap_code_renamed": {
+        "mean": 0.08715376332394054,
+        "std": 0.021613528771552083,
+        "folds": [
+          0.10882499109084648,
+          0.05495901308631543,
+          0.0835178510294451,
+          0.10539076069313538,
+          0.08307620071996022
+        ]
+      },
+      "delta": {
+        "mean": 0.06166546422739855,
+        "std": 0.031644047951905854,
+        "folds": [
+          0.09522982062815993,
+          0.05432441364906895,
+          0.08087554087101555,
+          0.012267291840469222,
+          0.06563025414827911
+        ]
+      },
+      "retrained_on_renamed": {
+        "ap": {
+          "mean": 0.14889047602947833,
+          "std": 0.033171504164893895,
+          "folds": [
+            0.19984267447117132,
+            0.12070299363657855,
+            0.15533123079807318,
+            0.11781395872753397,
+            0.1507615225140346
+          ]
+        },
+        "abs_diff_from_code_mean": 7.12484781392464e-05,
+        "within_one_fold_std": true,
+        "fold_std_of_code_ap": 0.038169475519843364,
+        "note": "Sanity check only. Retraining on the renamed variant measures nothing about lexical reliance -- a bag-of-tokens model simply relearns the neutral names. It must land within noise of AP on `code`; if it does not, the renaming is leaking."
+      }
+    },
+    "bow_ablated": {
+      "ap_code": {
+        "mean": 0.08277071560331747,
+        "std": 0.01555876680411353,
+        "folds": [
+          0.07518550587166037,
+          0.0855676845757116,
+          0.06394452746813722,
+          0.10619034732789397,
+          0.0829655127731842
+        ]
+      },
+      "ap_code_renamed": {
+        "mean": 0.08802959558315247,
+        "std": 0.015628599454052487,
+        "folds": [
+          0.08001816967922178,
+          0.10074611184203099,
+          0.06876039091380198,
+          0.10701124229156313,
+          0.0836120631891445
+        ]
+      },
+      "delta": {
+        "mean": -0.005258879979835004,
+        "std": 0.0059106817976727665,
+        "folds": [
+          -0.0048326638075614076,
+          -0.015178427266319391,
+          -0.004815863445664759,
+          -0.0008208949636691609,
+          -0.0006465504159603036
+        ]
+      },
+      "retrained_on_renamed": {
+        "ap": {
+          "mean": 0.13914752342803596,
+          "std": 0.024273701355346802,
+          "folds": [
+            0.1520633017230885,
+            0.16627048682777013,
+            0.12451420957759535,
+            0.10502605509318341,
+            0.1478635639185425
+          ]
+        },
+        "abs_diff_from_code_mean": 0.05637680782471849,
+        "within_one_fold_std": false,
+        "fold_std_of_code_ap": 0.01555876680411353,
+        "note": "Sanity check only. Retraining on the renamed variant measures nothing about lexical reliance -- a bag-of-tokens model simply relearns the neutral names. It must land within noise of AP on `code`; if it does not, the renaming is leaking."
+      }
+    },
+    "char_ngram": {
+      "ap_code": {
+        "mean": 0.20319378342661074,
+        "std": 0.1043801321296388,
+        "folds": [
+          0.38968723289532753,
+          0.15826361358512184,
+          0.15638645665873177,
+          0.1486726306523055,
+          0.1629589833415671
+        ]
+      },
+      "ap_code_renamed": {
+        "mean": 0.18075312471062827,
+        "std": 0.07917853515334844,
+        "folds": [
+          0.3217400844082418,
+          0.13767693534927003,
+          0.15764305104627488,
+          0.1408594647841141,
+          0.14584608796524068
+        ]
+      },
+      "delta": {
+        "mean": 0.02244065871598245,
+        "std": 0.026824365177839458,
+        "folds": [
+          0.06794714848708572,
+          0.020586678235851807,
+          -0.0012565943875431085,
+          0.00781316586819139,
+          0.01711289537632643
+        ]
+      },
+      "retrained_on_renamed": {
+        "ap": {
+          "mean": 0.1968284695247504,
+          "std": 0.09598349758321631,
+          "folds": [
+            0.3681106446946851,
+            0.1549869462297483,
+            0.16009862389231821,
+            0.14284737714320211,
+            0.15809875566379838
+          ]
+        },
+        "abs_diff_from_code_mean": 0.006365313901860348,
+        "within_one_fold_std": true,
+        "fold_std_of_code_ap": 0.1043801321296388,
+        "note": "Sanity check only. Retraining on the renamed variant measures nothing about lexical reliance -- a bag-of-tokens model simply relearns the neutral names. It must land within noise of AP on `code`; if it does not, the renaming is leaking."
+      }
+    },
+    "bow_plus_length": {
+      "ap_code": {
+        "mean": 0.17456981762155926,
+        "std": 0.04723998586416179,
+        "folds": [
+          0.1628655558386273,
+          0.13374569511803103,
+          0.15253528100403535,
+          0.2557689905874246,
+          0.16793356555967803
+        ]
+      },
+      "ap_code_renamed": {
+        "mean": 0.11287394498691498,
+        "std": 0.06034349870000749,
+        "folds": [
+          0.09528300773543366,
+          0.06913982792416698,
+          0.08174533325871203,
+          0.21868436057212065,
+          0.09951719544414167
+        ]
+      },
+      "delta": {
+        "mean": 0.061695872634644267,
+        "std": 0.013934683062273906,
+        "folds": [
+          0.06758254810319364,
+          0.06460586719386405,
+          0.07078994774532332,
+          0.03708463001530393,
+          0.06841637011553636
+        ]
+      },
+      "retrained_on_renamed": {
+        "ap": {
+          "mean": 0.17573045357407466,
+          "std": 0.0483209097678582,
+          "folds": [
+            0.16348723632839804,
+            0.13258647558812392,
+            0.15366890356562868,
+            0.25828675530857587,
+            0.17062289707964676
+          ]
+        },
+        "abs_diff_from_code_mean": 0.001160635952515393,
+        "within_one_fold_std": true,
+        "fold_std_of_code_ap": 0.04723998586416179,
+        "note": "Sanity check only. Retraining on the renamed variant measures nothing about lexical reliance -- a bag-of-tokens model simply relearns the neutral names. It must land within noise of AP on `code`; if it does not, the renaming is leaking."
+      }
+    }
+  }
+}

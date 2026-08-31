@@ -1,0 +1,27 @@
+{
+  "figures": [
+    "fig1_layer_curve.png",
+    "fig2_within_vs_cross.png",
+    "fig3_transfer_drop.png",
+    "fig4_minimal_pairs.png"
+  ],
+  "dir": "out/figures",
+  "sources": {
+    "fig1_layer_curve.png": [
+      "06_probe.json",
+      "02_baselines.json"
+    ],
+    "fig2_within_vs_cross.png": [
+      "02_baselines.json"
+    ],
+    "fig3_transfer_drop.png": [
+      "03_transfer.json",
+      "06_probe.json",
+      "07_decision.json"
+    ],
+    "fig4_minimal_pairs.png": [
+      "05_pairs.json"
+    ]
+  },
+  "skipped": []
+}
