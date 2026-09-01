@@ -1,4 +1,4 @@
-# Phase 1 — structural or lexical? Probing a code LM for test flakiness
+# Structural or lexical? Probing a code LM for test flakiness
 
 Implementation of the study specified in [`plan/`](plan/). One question:
 
